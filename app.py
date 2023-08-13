@@ -1,5 +1,17 @@
 # encoding:utf-8
 
+
+
+from flask import Flask, request
+import requests
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello from Flask Github!'
+
+
 import os
 import signal
 import sys
